@@ -7,7 +7,8 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="global-style.css">
+<link rel="stylesheet" href="../global-style.css">
+<link rel="stylesheet" href="dronev1.css">
 </head>
 <body>
 
@@ -17,9 +18,9 @@
     <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
       <i class="fa fa-bars"></i>
     </a>
-    <a href="./index.html#home" class="w3-bar-item w3-button">HOME</a>
-    <a href="./index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
-    <a href="./index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
+    <a href="../index.html#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="../index.html#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="../index.html#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PROJECTS</a>
     <!--<a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> CONTACT</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
       <i class="fa fa-search"></i>
@@ -37,17 +38,20 @@
 </div>
 
 <!-- First Parallax Image with Logo Text -->
-<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+<div class="bgimg-drone-assembly w3-display-container w3-opacity-min" id="home">
   <div class="w3-display-middle" style="white-space:nowrap;">
-    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Drone<span class="w3-hide-small"> Project</span> </span>
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Drone<span class="w3-hide-small"> Project (V1)</span> </span>
   </div>
 </div>
 
 <!-- Container (About Section) -->
 <div class="w3-content w3-container w3-padding-64" id="about">
   <h3 class="w3-center">Quick Info</h3>
-  <p>
-    more info will be added as I develop this page
+  <p class="w3-center">
+    This is a UAV drone primarily built by me with the help from my friends. This drone was built for the Technology Student Association (TSA) competition. 
+    The goal of this competition was to be able to fly through obstacles while transporting payloads. 
+    The more payloads you transported successfully, the more points you get. The counts toward your overall placement against other teams.
+    This drone was built during the 2023-2024 school year and semi-finaled at the Colorado state competition in 2024.
   </p>
   </div>
   
@@ -55,12 +59,12 @@
 
 <div class="w3-row w3-center w3-dark-grey w3-padding-16">
     <div class="w3-third w3-section">
-        <span class="w3-xlarge">~4</span><br>
+        <span class="w3-xlarge">~5</span><br>
         Months
       </div>
       <div class="w3-third w3-section">
-        <span class="w3-xlarge">3</span><br>
-        Design Iterations
+        <span class="w3-xlarge">4</span><br>
+        Major Design Iterations
       </div>
       <div class="w3-third w3-section">
         <span class="w3-xlarge">~$200</span><br>
@@ -69,7 +73,7 @@
 </div>
 
 <!-- Second Parallax Image with Portfolio Text -->
-<div class="bgimg-2 w3-display-container w3-opacity-min">
+<div class="bgimg-drone-competition-flying w3-display-container w3-opacity-min">
   <div class="w3-display-middle">
     <span class="w3-xxlarge w3-text-white w3-wide">Full Documentation</span>
   </div>
@@ -77,8 +81,59 @@
 
 <!-- Container (Portfolio Section) -->
 <div class="w3-content w3-container w3-padding-64" id="portfolio">
-  <h3 class="w3-center">The drone's development history</h3>
-  <p class="w3-center">More info will be added soon</p><br>
+  <h3 class="w3-center">The drone's development history - our initial parts</h3>
+  <p class="">
+    This all started as an idea, a thought, a cool concept. But I never would have though I'd get this far.
+    One of my friends helping with this project found a $20 drone and controller combo at a garage sale.
+    It was sold as 'not tested', and that was later proven, some of the parts weren't the best.
+    After taking it apart and looking at the individual pieces, we found out that the parts were from ~2012.
+  </p>
+
+  <h4 class="w3-center">The onboard flight controller</h4>
+  <p class="">
+    The $20 drone came with a flight controller, it was old but we didn't want to get a new one.
+    We had to use some older software to get it working. This software was LibrePilot.
+    While it looked new and supported everything the flight controller had to offer, it had some bugs.
+    We got everything configured using this software and it mostly worked... (why does it full [___] when the controller is [___]?!)
+  </p>
+
+  <h4 class="w3-center">The battery</h4>
+  <p class="">
+    It didn't come with a battery to start with so we knew we had to get one quick.
+    We didn't know what kind of bettery to get, "they all use lipo, we should probably use that".
+    But wait, there are different cell counts, c ratings (still don't really care about that)
+    capacities, etc. We looked at our components, the minimum was a 2s and the max was a 6s.
+    We though a 6s would be good as it gives the highest voltage.
+  </p>
+
+  <h4 class="w3-center">The motors</h4>
+  <p class="">
+    The motors it came with had a number on it, '980 kv', what's a kv?
+    Turns out (from what I found) this means these motors are lower speed and higher tourque.
+    The choice to get a 6s battery was actually a good desicion because it allowed us to use smaller props
+    while still being able to fly. We didn't want to buy newer motors either so we kept these.
+    "If it ain't broke, don't fix it" - every engineer
+  </p>
+
+  <h4 class="w3-center">The motor esc's</h4>
+  <p class="">
+    The original drone also had escs with it. Just plug the pwm wire into the flight controller
+    and the power wires into the battery and your good. We had to make a <i>bus bar</i>, if you could call it that.
+    It worked though, so I don't care if it looks a little sketchy.
+  </p>
+
+  <h4 class="w3-center">The controller and receiver</h4>
+  <p class="">
+    The controller with the original drone was ok. It was included in the original $20 purchase with a nice case for it.
+    It worked with the receiver as well and had no problems. It has sbus support so we could use just three wires to receive all eight channels.
+    Just 5v, ground, and data wires to the flight controller. Along with dog teeth marks on one of the antennas, this worked good.
+  </p>
+
+  <h4 class="w3-center">The propellers</h4>
+  <p class="">
+    Again, we didn't know what we were doing. I designed a basic frame and thought six inch propellers were a good option.
+    There was a size constraint for the competition
+  </p>
 </div>
 
 <!-- Modal for full size images on click-->

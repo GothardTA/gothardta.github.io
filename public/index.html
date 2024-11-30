@@ -6,13 +6,15 @@
     
     <title>Trooper&#39;s Projects | Trooper&#39;s Projects</title>
     <meta name="viewport" content="width=device-width,minimum-scale=1">
-    <meta name="description" content="The last theme you&#39;ll ever need. Maybe.">
+    <meta name="description" content="The website with all of my projects">
     <meta name="generator" content="Hugo 0.139.3">
     
     
     
       <meta name="robots" content="index, follow">
     
+    
+      <meta name="author" content = "Trooper Gothard">
     
 
     
@@ -41,16 +43,16 @@
     <meta property="og:url" content="/">
   <meta property="og:site_name" content="Trooper&#39;s Projects">
   <meta property="og:title" content="Trooper&#39;s Projects">
-  <meta property="og:description" content="This website hosts many of the projects I have made and some that are in progress. Whether it’s a drone or small Arduino project, it’s here.">
+  <meta property="og:description" content="{{ range where .Site.Pages “Section” “main” }} {{ .Render “summary” }} {{ end }} This website hosts many of the projects I have made and some that are in progress. Whether it’s a drone or small Arduino project, it’s here.">
   <meta property="og:locale" content="en_US">
   <meta property="og:type" content="website">
 
   <meta itemprop="name" content="Trooper&#39;s Projects">
-  <meta itemprop="description" content="This website hosts many of the projects I have made and some that are in progress. Whether it’s a drone or small Arduino project, it’s here.">
-  <meta itemprop="wordCount" content="26">
+  <meta itemprop="description" content="{{ range where .Site.Pages “Section” “main” }} {{ .Render “summary” }} {{ end }} This website hosts many of the projects I have made and some that are in progress. Whether it’s a drone or small Arduino project, it’s here.">
+  <meta itemprop="wordCount" content="40">
   <meta name="twitter:card" content="summary">
   <meta name="twitter:title" content="Trooper&#39;s Projects">
-  <meta name="twitter:description" content="This website hosts many of the projects I have made and some that are in progress. Whether it’s a drone or small Arduino project, it’s here.">
+  <meta name="twitter:description" content="{{ range where .Site.Pages “Section” “main” }} {{ .Render “summary” }} {{ end }} This website hosts many of the projects I have made and some that are in progress. Whether it’s a drone or small Arduino project, it’s here.">
 
       
     
@@ -116,7 +118,8 @@
     <main class="pb7" role="main">
       
   <article class="cf ph3 ph5-l pv3 pv4-l f4 tc-l center measure-wide lh-copy mid-gray">
-      <p>This website hosts many of the projects I have made and some that are in progress. Whether it&rsquo;s a drone or small Arduino project, it&rsquo;s here.</p>
+      <p>{{ range where .Site.Pages &ldquo;Section&rdquo; &ldquo;main&rdquo; }} {{ .Render &ldquo;summary&rdquo; }} {{ end }}
+This website hosts many of the projects I have made and some that are in progress. Whether it&rsquo;s a drone or small Arduino project, it&rsquo;s here.</p>
 
     </article>
     

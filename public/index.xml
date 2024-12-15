@@ -9,10 +9,17 @@
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Drone V1</title>
-      <link>/projects/drone/</link>
+      <link>/projects/dronev1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/projects/drone/</guid>
-      <description>&lt;h1 id=&#34;quick-info&#34;&gt;Quick Info&lt;/h1&gt;&#xA;&lt;p&gt;This is a UAV drone primarily built by me with the help from my friends. This drone was built for the Technology Student Association (TSA) competition. The goal of this competition was to be able to fly through obstacles while transporting payloads. The more payloads you transported successfully, the more points you get. The counts toward your overall placement against other teams. This drone was built during the 2023-2024 school year and semi-finaled at the Colorado state competition in 2024.&lt;/p&gt;</description>
+      <guid>/projects/dronev1/</guid>
+      <description>&lt;h1 id=&#34;quick-info&#34;&gt;Quick Info&lt;/h1&gt;&#xA;&lt;p&gt;This is a UAV drone primarily built by me with the help of my friends. This drone was built for the Technology Student Association (TSA) competition. The goal of this competition was to be able to fly through obstacles while transporting payloads. The more payloads you transport successfully, the more points you get. This is worth 60 out of the 180 points to place teams. The other 120 points are from your documentation. This drone was built during the 2023-2024 school year and semi-final at the Colorado state competition in 2024.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Drone V2</title>
+      <link>/projects/dronev2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/projects/dronev2/</guid>
+      <description>&lt;h1 id=&#34;quick-info&#34;&gt;Quick Info&lt;/h1&gt;&#xA;&lt;p&gt;This is the continuation of last year&amp;rsquo;s &lt;a href=&#34;/projects/dronev1/&#34;&gt;drone&lt;/a&gt;. This time, it&amp;rsquo;s actually good (it&amp;rsquo;s not finished yet). This is for the 2024-25 TSA competition. This year&amp;rsquo;s goal is to be able to pick up little toy dinosaurs or caged dinosaurs. The more you can pick up and transport, the more points you get. The drone flying and picking up the payloads is worth 60 out of the 180 total points. Once again, documentation is two-thirds of your score. This page is still a work in progress as this year&amp;rsquo;s drone is still in progress, but so far it&amp;rsquo;s already better than last year&amp;rsquo;s. I recommend at least skimming over the &lt;a href=&#34;/projects/dronev1/&#34;&gt;page&lt;/a&gt; for last year&amp;rsquo;s drone to get a better understanding of this year&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

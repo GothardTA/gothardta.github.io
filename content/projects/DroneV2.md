@@ -1,6 +1,6 @@
 ---
 title: Drone V2
-featured_image: /images/dronev2/regionals_frame_red.jpg
+featured_image: /images/dronev2/regionals_frame_red.png
 type: page
 ---
 # Quick Info

@@ -1,6 +1,7 @@
 ---
 title: Drone V2
 featured_image: /images/dronev2/regionals_frame_red.jpg
+type: page
 ---
 # Quick Info
 This is the continuation of last year's [drone](./dronev1). This time, it's actually good (it's not finished yet). This is for the 2024-25 TSA competition. This year's goal is to be able to pick up little toy dinosaurs or caged dinosaurs. The more you can pick up and transport, the more points you get. The drone flying and picking up the payloads is worth 60 out of the 180 total points. Once again, documentation is two-thirds of your score. This page is still a work in progress as this year's drone is still in progress, but so far it's already better than last year's. I recommend at least skimming over the [page](./dronev1) for last year's drone to get a better understanding of this year's.

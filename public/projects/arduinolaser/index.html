@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Arduino Laser Data Transfer | Trooper&#39;s Projects</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Quick Info
+Not too long ago I heard NASA could transmit a 4K video using lasers to a satellite millions of miles away. I thought that was cool and I wanted to do something similar. I had a couple of Arduinos, laser modules, and photo resistors. I first wanted to send data one way using a single wire (plus ground) to get a working protocol. I then replaced the wire with a laser diode on one end and a photoresistor on the other. I then had a few issues with transfer speed because the photo resistors were too slow. I don&rsquo;t have photodiodes so I used a small solar panel from those outdoor lights you can stick in the ground anywhere. In the end, I could get a bit rate of 5000.">
+    <meta name="generator" content="Hugo 0.140.2">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+      <meta name="author" content = "Trooper Gothard">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/projects/arduinolaser/">
+    
+
+    <meta property="og:url" content="/projects/arduinolaser/">
+  <meta property="og:site_name" content="Trooper&#39;s Projects">
+  <meta property="og:title" content="Arduino Laser Data Transfer">
+  <meta property="og:description" content="Quick Info Not too long ago I heard NASA could transmit a 4K video using lasers to a satellite millions of miles away. I thought that was cool and I wanted to do something similar. I had a couple of Arduinos, laser modules, and photo resistors. I first wanted to send data one way using a single wire (plus ground) to get a working protocol. I then replaced the wire with a laser diode on one end and a photoresistor on the other. I then had a few issues with transfer speed because the photo resistors were too slow. I don’t have photodiodes so I used a small solar panel from those outdoor lights you can stick in the ground anywhere. In the end, I could get a bit rate of 5000.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+
+  <meta itemprop="name" content="Arduino Laser Data Transfer">
+  <meta itemprop="description" content="Quick Info Not too long ago I heard NASA could transmit a 4K video using lasers to a satellite millions of miles away. I thought that was cool and I wanted to do something similar. I had a couple of Arduinos, laser modules, and photo resistors. I first wanted to send data one way using a single wire (plus ground) to get a working protocol. I then replaced the wire with a laser diode on one end and a photoresistor on the other. I then had a few issues with transfer speed because the photo resistors were too slow. I don’t have photodiodes so I used a small solar panel from those outdoor lights you can stick in the ground anywhere. In the end, I could get a bit rate of 5000.">
+  <meta itemprop="wordCount" content="711">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Arduino Laser Data Transfer">
+  <meta name="twitter:description" content="Quick Info Not too long ago I heard NASA could transmit a 4K video using lasers to a satellite millions of miles away. I thought that was cool and I wanted to do something similar. I had a couple of Arduinos, laser modules, and photo resistors. I first wanted to send data one way using a single wire (plus ground) to get a working protocol. I then replaced the wire with a laser diode on one end and a photoresistor on the other. I then had a few issues with transfer speed because the photo resistors were too slow. I don’t have photodiodes so I used a small solar panel from those outdoor lights you can stick in the ground anywhere. In the end, I could get a bit rate of 5000.">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('/images/arduinolaser/overall.jpg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Trooper&#39;s Projects
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Blog Posts page">
+              Blog Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Arduino Laser Data Transfer</div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          Arduino Laser Data Transfer
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h1 id="quick-info">Quick Info</h1>
+<p>Not too long ago I heard NASA could transmit a 4K video using lasers to a satellite millions of miles away. I thought that was cool and I wanted to do something similar. I had a couple of Arduinos, laser modules, and photo resistors. I first wanted to send data one way using a single wire (plus ground) to get a working protocol. I then replaced the wire with a laser diode on one end and a photoresistor on the other. I then had a few issues with transfer speed because the photo resistors were too slow. I don&rsquo;t have photodiodes so I used a small solar panel from those outdoor lights you can stick in the ground anywhere. In the end, I could get a bit rate of 5000.</p>
+<h1 id="in-depth">In Depth</h1>
+<p>The goal I had in mind for this project was to transmit audio, not beeps, but actual audio. So far, I have found that an Arduino is not even close to being fast enough for this and my laser protocol can&rsquo;t seem to handle faster speeds either. But for now, it&rsquo;s good enough. It uses my custom-made single-wire protocol that is similar to uart but is only one way. There is no error correction, packets, or any other fancy stuff. You can transmit bytes and words. I first got this working using a wire and could use a bit rate of 10000. To go on to anything other than a wire, I needed a way to receive the signal. A laser transmits light and that light can be any brightness. There is also ambient light that the receiver can pick up. I had to make a circuit that only outputs when the laser is on. Since the receiver only sees brightness, I needed a way to figure out when the laser is on. When the laser is on the receiver outputs a little extra power. I used an lm358 to compare the signal received by the receiver to a potentiometer. This allowed me to adjust when the output should be on since the voltage only changes by a small amount.
+<img src="/images/arduinolaser/laserschematic.png" alt="">
+I tried using a photoresistor but those were too slow. I could only get it working with a bit rate of around 100. I don&rsquo;t have photodiodes so I had to figure something else out. I had a small solar panel from one of those lights you can stick in the ground by your driveway or garden. A solar panel is just a giant photodiode. I hooked it up and it worked, but I had to keep adjusting the potentiometer every minute because the sunlight from my window kept changing. I added a cardboard box with an opening around the solar panel.
+<img src="/images/arduinolaser/overall.jpg" alt="">
+<img src="/images/arduinolaser/closeup.jpg" alt="">
+The picture shows the laser close to the panel but it can work at longer distances. I got it working outside when it was dusk, but during the day, the laser doesn&rsquo;t add a large enough difference to the brightness for it to receive anything. Another hard part is positioning the laser and receiver, one little bump or tape coming loose and then you have to realign it.</p>
+<h1 id="parts">Parts</h1>
+<ul>
+<li>2 Arduinos (or Arduino compatible micro controller)</li>
+<li>5v laser diode</li>
+<li>photo diode (or mini solar panel in my case)</li>
+<li>LM358</li>
+<li>Potentiometer</li>
+</ul>
+<h1 id="in-conclusion">In Conclusion</h1>
+<p>This was a fun project, I learned about how different data protocols worked and how I could make my own. Although it wasn&rsquo;t what I wanted it to be, it was still cool. I was able to hide the receiver and when a friend was close to it, I pointed the laser at the receiver and it started rickrolling him. In the future, I want to use Raspberry Pi Picos and actual photodiodes to make this faster. I have already experimented with the Pico and getting USB to work on it and hope I can use it to transmit actual audio. But for now, you can send data a very slow speeds, but it&rsquo;s enough to play tones and beeps.</p>
+<h1 id="code">Code</h1>
+<p>I wrote the transmitter code and it is available under my <a href="https://github.com/GothardTA/arduinolasersong">github</a>. Everything music-related used code from robsoncouto on his <a href="https://github.com/robsoncouto/arduino-songs/tree/master">github</a>. I don&rsquo;t understand anything related to how music is written or played from sheet music so having their code really helped.</p>
+
+      </div>
+    </article>
+  </div>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/" >
+    &copy;  Trooper's Projects 2024 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -1,6 +1,7 @@
 ---
 title: Drone V1
 featured_image: /images/dronev1/drone_competition_2024.png
+type: page
 ---
 # Quick Info
 This is a UAV drone primarily built by me with the help of my friends. This drone was built for the Technology Student Association (TSA) competition. The goal of this competition was to be able to fly through obstacles while transporting payloads. The more payloads you transport successfully, the more points you get. This is worth 60 out of the 180 points to place teams. The other 120 points are from your documentation. This drone was built during the 2023-2024 school year and semi-final at the Colorado state competition in 2024.

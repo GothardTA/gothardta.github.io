@@ -6,7 +6,22 @@
     <description>Recent content on Trooper&#39;s Projects</description>
     <generator>Hugo</generator>
     <language>en-US</language>
+    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
     <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Drone Update - Dec 15, 2024</title>
+      <link>/posts/dec15_2024/</link>
+      <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
+      <guid>/posts/dec15_2024/</guid>
+      <description>Update about the drone</description>
+    </item>
+    <item>
+      <title>Arduino Laser Data Transfer</title>
+      <link>/projects/arduinolaser/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      <guid>/projects/arduinolaser/</guid>
+      <description>&lt;h1 id=&#34;quick-info&#34;&gt;Quick Info&lt;/h1&gt;&#xA;&lt;p&gt;Not too long ago I heard NASA could transmit a 4K video using lasers to a satellite millions of miles away. I thought that was cool and I wanted to do something similar. I had a couple of Arduinos, laser modules, and photo resistors. I first wanted to send data one way using a single wire (plus ground) to get a working protocol. I then replaced the wire with a laser diode on one end and a photoresistor on the other. I then had a few issues with transfer speed because the photo resistors were too slow. I don&amp;rsquo;t have photodiodes so I used a small solar panel from those outdoor lights you can stick in the ground anywhere. In the end, I could get a bit rate of 5000.&lt;/p&gt;</description>
+    </item>
     <item>
       <title>Drone V1</title>
       <link>/projects/dronev1/</link>

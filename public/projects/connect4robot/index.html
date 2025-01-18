@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    
+    <title>Connect 4 Robot | Trooper&#39;s Projects</title>
+    <meta name="viewport" content="width=device-width,minimum-scale=1">
+    <meta name="description" content="Quick Info
+This was my final project in my robotics class. We could choose what we wanted to work on as long as it was autonomous in some way. I had a thought about making a robot that can play a game and decided on Connect 4 since it would be simpler to play pieces. The class seemed to like this idea when I presented it so I went with it. It uses a Raspberry Pi Zero 2 W with the Raspberry Pi camera module to detect the board and the pieces to then use an &ldquo;AI&rdquo; to figure out the best move.">
+    <meta name="generator" content="Hugo 0.140.2">
+    
+    
+    
+      <meta name="robots" content="index, follow">
+    
+    
+      <meta name="author" content = "Trooper Gothard">
+    
+
+    
+<link rel="stylesheet" href="/ananke/css/main.min.d05fb5f317fcf33b3a52936399bdf6f47dc776516e1692e412ec7d76f4a5faa2.css" >
+
+
+
+    
+
+    
+      
+
+    
+
+    
+
+    
+      <link rel="canonical" href="/projects/connect4robot/">
+    
+
+    <meta property="og:url" content="/projects/connect4robot/">
+  <meta property="og:site_name" content="Trooper&#39;s Projects">
+  <meta property="og:title" content="Connect 4 Robot">
+  <meta property="og:description" content="Quick Info This was my final project in my robotics class. We could choose what we wanted to work on as long as it was autonomous in some way. I had a thought about making a robot that can play a game and decided on Connect 4 since it would be simpler to play pieces. The class seemed to like this idea when I presented it so I went with it. It uses a Raspberry Pi Zero 2 W with the Raspberry Pi camera module to detect the board and the pieces to then use an “AI” to figure out the best move.">
+  <meta property="og:locale" content="en_US">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="projects">
+
+  <meta itemprop="name" content="Connect 4 Robot">
+  <meta itemprop="description" content="Quick Info This was my final project in my robotics class. We could choose what we wanted to work on as long as it was autonomous in some way. I had a thought about making a robot that can play a game and decided on Connect 4 since it would be simpler to play pieces. The class seemed to like this idea when I presented it so I went with it. It uses a Raspberry Pi Zero 2 W with the Raspberry Pi camera module to detect the board and the pieces to then use an “AI” to figure out the best move.">
+  <meta itemprop="wordCount" content="1679">
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Connect 4 Robot">
+  <meta name="twitter:description" content="Quick Info This was my final project in my robotics class. We could choose what we wanted to work on as long as it was autonomous in some way. I had a thought about making a robot that can play a game and decided on Connect 4 since it would be simpler to play pieces. The class seemed to like this idea when I presented it so I went with it. It uses a Raspberry Pi Zero 2 W with the Raspberry Pi camera module to detect the board and the pieces to then use an “AI” to figure out the best move.">
+
+      
+    
+	
+  </head><body class="ma0 avenir bg-near-white production">
+
+    
+
+  
+  
+  
+  <header class="cover bg-center" style="background-image: url('/images/connect4robot/overall.jpg');">
+    <div class="bg-black-60">
+      <nav class="pv3 ph3 ph4-ns" role="navigation">
+  <div class="flex-l justify-between items-center center">
+    <a href="/" class="f3 fw2 hover-white no-underline white-90 dib">
+      
+        Trooper&#39;s Projects
+      
+    </a>
+    <div class="flex-l items-center">
+      
+
+      
+        <ul class="pl0 mr3">
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/about/" title="About Me page">
+              About Me
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/posts/" title="Blog Posts page">
+              Blog Posts
+            </a>
+          </li>
+          
+          <li class="list f5 f4-ns fw4 dib pr3">
+            <a class="hover-white no-underline white-90" href="/projects/" title="Projects page">
+              Projects
+            </a>
+          </li>
+          
+        </ul>
+      
+      <div class="ananke-socials"></div>
+
+    </div>
+  </div>
+</nav>
+
+      <div class="tc-l pv6 ph3 ph4-ns">
+        
+          <div class="f2 f1-l fw2 white-90 mb0 lh-title">Connect 4 Robot</div>
+          
+        
+      </div>
+    </div>
+  </header>
+
+
+    <main class="pb7" role="main">
+      
+  <div class="flex-l mt2 mw8 center">
+    <article class="center cf pv5 ph3 ph4-ns mw7">
+      <header>
+        <h1 class="f1">
+          Connect 4 Robot
+        </h1>
+      </header>
+      <div class="nested-copy-line-height lh-copy f4 nested-links mid-gray">
+        <h1 id="quick-info">Quick Info</h1>
+<p>This was my final project in my robotics class. We could choose what we wanted to work on as long as it was autonomous in some way. I had a thought about making a robot that can play a game and decided on Connect 4 since it would be simpler to play pieces. The class seemed to like this idea when I presented it so I went with it. It uses a Raspberry Pi Zero 2 W with the Raspberry Pi camera module to detect the board and the pieces to then use an &ldquo;AI&rdquo; to figure out the best move.</p>
+<h1 id="research">Research</h1>
+<p>After deciding on a Connect 4 playing robot, I wanted to see if anyone else had done it. The first result was a robot built at MIT. MIT!? I was trying to make a robot MIT had made. This immediately put some pressure on me, I was trying to make something that a student at MIT built. I looked at the design and it gave me some ideas. A chute that holds the pieces, a horizontal shaft that it moves on, etc are all good ideas.</p>
+<h1 id="where-to-start">Where to Start?</h1>
+<p>After figuring out what to make, I had to get to work. As a start, I wanted to make the Connect 4 game within a terminal window. I got a basic &ldquo;AI&rdquo; implemented as well. The only difference between someone playing this in the terminal to the robot was that the initial board layout would be different. The robot does not detect where the player places a game coin, instead relying on the camera to detect where every piece is. Once the button on the robot is pressed, it takes a picture and recreates the game board in software. It then runs my Connect 4 program with an initial board and tells the &ldquo;AI&rdquo; where to play.</p>
+<h1 id="the-robots-design">The Robot&rsquo;s Design</h1>
+<p>Using inspiration from the MIT Connect 4 robot, The main part that holds the pieces and dispenses them works in a very similar way. I have a chute that stores pieces with a plate underneath that can move back and forth. When the plate moves back, a piece drops into a circular cutout, it then moves forward over a chute where the piece falls into the top of the board. This plate is moved by a servo with an arm and a thin metal rod.
+<img src="/images/connect4robot/piece_dropper.png" alt="">
+My design does not reflect this though. I use Onshape for most of my projects and my knowledge of it consists of an intro to engineering class where the most I did was make a basic mouse trap car that had a bottom plate and two triangles for walls. Designing this was difficult so I decided I would make modifications if needed after making these initial parts. There were a lot of modifications to my design.
+<img src="/images/connect4robot/mainpart.jpg" alt="">
+After looking back at the MIT robot, I realized that the plate that drops one piece at a time spins on theirs instead of slides like mine. I was running out of time though so I couldn&rsquo;t redesign that part. This mechanism works about 80% of the time, with the other 20% being when it gets stuck. I also need to mention the frame that this moves on. Aluminum extrusions from a cheap Chinese laser engraver make up the frame. I would use the stepper motors and stepper motor driver board as well to move the main piece dropping part. Luckily the stepper motor driver board could be easily programmed with the Arduino IDE so I could write simple could that received a number and moved to the corresponding column on the Connect 4 board.</p>
+<h1 id="the-code">The Code</h1>
+<p>I like the Rust programming language, it quickly became my favorite language so I wanted to use it for my robot. The <a href="https://github.com/GothardTA/connectfour">Connect 4 program</a> I made uses Rust for game logic and all the code using the camera along with the game and &ldquo;AI&rdquo; uses Rust as well. The stepper motor driver board uses C++ though because it is basically an Arduino.</p>
+<h2 id="the-main-logic">The Main Logic</h2>
+<p>My main <a href="https://github.com/GothardTA/connectfourrobot">program (GitHub)</a> has one file that runs on startup on the Raspberry Pi. It uses the GPIO pins to detect when the button is pressed, it then takes a picture (by running a command 🤮) and analyzes it, sends that to the &ldquo;AI&rdquo;, and sends the column number to drop a piece to the driver board. When I first tested it, I ran into an issue. The issue was that the Rust USB serial library I was using didn&rsquo;t seem to work. I kept trying different baud rates and settings but the driver board wasn&rsquo;t moving the motor. Using my computer with the Arduino IDE serial monitor worked though. Time was still a constraint so I had to quickly improvise. I used three GPIO pins (plus ground) to communicate with the driver board. It was stupid but it worked on the first try. It works by sending the column number in binary. I treat each of the three wires as bits with every pin pulled low. With this, there were exactly enough bits for this to work. Binary 000 represented no move with 001 representing column one, 010 representing column two, and so on.</p>
+<h2 id="the-camera">The Camera</h2>
+<p>I didn&rsquo;t want to spend too much time on this so I did something simple, or at least I thought it was simple. I didn&rsquo;t use any tools to detect the board and find every piece&rsquo;s position. I hard-coded the pixel coordinates to every piece. This worked as long as the camera didn&rsquo;t move, but if it did, time to re-code every value.</p>
+<h2 id="the-driver-board">The Driver Board</h2>
+<p>With the mentioned fixes above, the driver board waits until at least one pin is pulled high to do anything. Once it sees that, it goes to the corresponding column rotates the servo shaft ~90 degrees, and back dropping a piece. It then moves back. The starting position is where the piece dropper hits the camera mount, this is how I home it, just make sure it hits the camera mount. Every column has a certain amount of motor steps that it takes to get there. This is how it knows how far to go.</p>
+<h2 id="the-ai">The &ldquo;AI&rdquo;</h2>
+<p>I put AI in quotes every time I used it for a reason. This is not real AI, but instead code that uses an algorithm to play. Given the same board, it will always play the same move. This is how I could always know its next move if I wanted to impress someone who plays it. The algorithm works by &ldquo;dropping&rdquo; a piece in every column and seeing where it gets a Connect 4 first. If it finds a Connect 4, it returns the column that results in a win. If it doesn&rsquo;t find a possible Connect 4, it finds where it can make its first three in a row, and returns the column number. After that, it just picks a random column.</p>
+<h1 id="the-problems">The Problems</h1>
+<p>While it (mostly) worked in the end, it had many problems. The camera, code, and hardware issues all had weird bugs.</p>
+<h2 id="the-camera-my-code">The Camera (My Code)</h2>
+<p>The main one was the camera, which was awful to get working. I guess I was part of the blame though. My program used predefined pixel coordinates to find the color and detect a piece or not. While this was simple after finding every pixel coordinate, the camera would always have moved at least a bit. If the picture was skewed by more than a few pixels, the piece recognition got weird and returned a board with impossible piece locations. This resulted in the &ldquo;AI&rdquo; thinking it would win if it played a certain spot not knowing the board the camera returned was wrong.</p>
+<h2 id="the-camera-itself">The Camera (Itself)</h2>
+<p>Another problem was the fact the camera only worked half the time. When I run the camera command to take a picture, I often get an error saying that the camera failed to return data. Sometimes it worked, sometimes it didn&rsquo;t. It seemed to be a problem with the camera itself but it was too late to fix or replace it.</p>
+<h2 id="the-piece-dropper">The Piece Dropper</h2>
+<p>I already touched on this earlier but I want to elaborate more about it. The mechanism is not good. It gets stuck often and has to be manually fixed for it to work again. The sliding part is also permanently in the mechanism, melted plastic makes it so that the piece can&rsquo;t be removed. If I were to remake this project, this part would be my main priority to get working. The servo motor with the metal arm was also a weird choice. It was recommended to me by a friend since I didn&rsquo;t know what to do, and while it worked, it meant having to deal with more moving parts that would get stuck or break. The servo was also melted to the main part and was positioned where it worked best which meant more trial and error.</p>
+<h1 id="final-result">Final Result</h1>
+<p><img src="/images/connect4robot/overall.jpg" alt="">
+It (mostly) works! Ignoring the weird issues, it was able to play somewhat decently. Almost everyone who played it won though. My &ldquo;AI&rdquo; wasn&rsquo;t that good, I wanted to experiment with machine learning to make a decent AI but I didn&rsquo;t have time. My robot did beat people who didn&rsquo;t know the game that well so I&rsquo;ll count that as a win. I turned this project in in May 2024. In November 2024 I was asked by my teacher to present this at the county&rsquo;s high school CTE fair to show off my school&rsquo;s program. I pulled the robot out and it still worked, except for one thing, the camera. It was only able to take a couple pictures before it broke, I don&rsquo;t know how it broke, it just gave me errors whenever I tried taking a picture. So during the event, I set it to play randomly. I wasn&rsquo;t happy with it but it still impressed a lot of people. I would like to make this better in the future, but for now, this is all!</p>
+
+      </div>
+    </article>
+  </div>
+
+    </main>
+    <footer class="bg-black bottom-0 w-100 pa3" role="contentinfo">
+  <div class="flex justify-between">
+  <a class="f4 fw4 hover-white no-underline white-70 dn dib-ns pv2 ph3" href="/" >
+    &copy;  Trooper's Projects 2025 
+  </a>
+    <div><div class="ananke-socials"></div>
+</div>
+  </div>
+</footer>
+
+  </body>
+</html>

@@ -2,46 +2,53 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Trooper&#39;s Projects</title>
-    <link>/</link>
+    <link>//localhost:1313/</link>
     <description>Recent content on Trooper&#39;s Projects</description>
     <generator>Hugo</generator>
     <language>en-US</language>
-    <lastBuildDate>Thu, 12 Dec 2024 00:00:00 +0000</lastBuildDate>
-    <atom:link href="/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 28 Jan 2025 00:00:00 +0000</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>New Connect Four Robot Design</title>
+      <link>//localhost:1313/posts/jan28_2025/</link>
+      <pubDate>Tue, 28 Jan 2025 00:00:00 +0000</pubDate>
+      <guid>//localhost:1313/posts/jan28_2025/</guid>
+      <description>A new design to fix the problems with the old design</description>
+    </item>
     <item>
       <title>Drone Update - Dec 15, 2024</title>
-      <link>/posts/dec15_2024/</link>
+      <link>//localhost:1313/posts/dec15_2024/</link>
       <pubDate>Thu, 12 Dec 2024 00:00:00 +0000</pubDate>
-      <guid>/posts/dec15_2024/</guid>
+      <guid>//localhost:1313/posts/dec15_2024/</guid>
       <description>Update about the drone</description>
     </item>
     <item>
       <title>Arduino Laser Data Transfer</title>
-      <link>/projects/arduinolaser/</link>
+      <link>//localhost:1313/projects/arduinolaser/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/projects/arduinolaser/</guid>
+      <guid>//localhost:1313/projects/arduinolaser/</guid>
       <description>&lt;h1 id=&#34;quick-info&#34;&gt;Quick Info&lt;/h1&gt;&#xA;&lt;p&gt;Not too long ago I heard NASA could transmit a 4K video using lasers to a satellite millions of miles away. I thought that was cool and I wanted to do something similar. I had a couple of Arduinos, laser modules, and photo resistors. I first wanted to send data one way using a single wire (plus ground) to get a working protocol. I then replaced the wire with a laser diode on one end and a photoresistor on the other. I then had a few issues with transfer speed because the photo resistors were too slow. I don&amp;rsquo;t have photodiodes so I used a small solar panel from those outdoor lights you can stick in the ground anywhere. In the end, I could get a bit rate of 5000.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Connect 4 Robot</title>
-      <link>/projects/connect4robot/</link>
+      <link>//localhost:1313/projects/connect4robot/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/projects/connect4robot/</guid>
+      <guid>//localhost:1313/projects/connect4robot/</guid>
       <description>&lt;h1 id=&#34;quick-info&#34;&gt;Quick Info&lt;/h1&gt;&#xA;&lt;p&gt;This was my final project in my robotics class. We could choose what we wanted to work on as long as it was autonomous in some way. I had a thought about making a robot that can play a game and decided on Connect 4 since it would be simpler to play pieces. The class seemed to like this idea when I presented it so I went with it. It uses a Raspberry Pi Zero 2 W with the Raspberry Pi camera module to detect the board and the pieces to then use an &amp;ldquo;AI&amp;rdquo; to figure out the best move.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drone V1</title>
-      <link>/projects/dronev1/</link>
+      <link>//localhost:1313/projects/dronev1/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/projects/dronev1/</guid>
+      <guid>//localhost:1313/projects/dronev1/</guid>
       <description>&lt;h1 id=&#34;quick-info&#34;&gt;Quick Info&lt;/h1&gt;&#xA;&lt;p&gt;This is a UAV drone primarily built by me with the help of my friends. This drone was built for the Technology Student Association (TSA) competition. The goal of this competition was to be able to fly through obstacles while transporting payloads. The more payloads you transport successfully, the more points you get. This is worth 60 out of the 180 points to place teams. The other 120 points are from your documentation. This drone was built during the 2023-2024 school year and semi-final at the Colorado state competition in 2024.&lt;/p&gt;</description>
     </item>
     <item>
       <title>Drone V2</title>
-      <link>/projects/dronev2/</link>
+      <link>//localhost:1313/projects/dronev2/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      <guid>/projects/dronev2/</guid>
-      <description>&lt;h1 id=&#34;quick-info&#34;&gt;Quick Info&lt;/h1&gt;&#xA;&lt;p&gt;This is the continuation of last year&amp;rsquo;s &lt;a href=&#34;/projects/dronev1/&#34;&gt;drone&lt;/a&gt;. This time, it&amp;rsquo;s actually good (it&amp;rsquo;s not finished yet). This is for the 2024-25 TSA competition. This year&amp;rsquo;s goal is to be able to pick up little toy dinosaurs or caged dinosaurs. The more you can pick up and transport, the more points you get. The drone flying and picking up the payloads is worth 60 out of the 180 total points. Once again, documentation is two-thirds of your score. This page is still a work in progress as this year&amp;rsquo;s drone is still in progress, but so far it&amp;rsquo;s already better than last year&amp;rsquo;s. I recommend at least skimming over the &lt;a href=&#34;/projects/dronev1/&#34;&gt;page&lt;/a&gt; for last year&amp;rsquo;s drone to get a better understanding of this year&amp;rsquo;s.&lt;/p&gt;</description>
+      <guid>//localhost:1313/projects/dronev2/</guid>
+      <description>&lt;h1 id=&#34;quick-info&#34;&gt;Quick Info&lt;/h1&gt;&#xA;&lt;p&gt;This is the continuation of last year&amp;rsquo;s &lt;a href=&#34;//localhost:1313/projects/dronev1/&#34;&gt;drone&lt;/a&gt;. This time, it&amp;rsquo;s actually good (it&amp;rsquo;s not finished yet). This is for the 2024-25 TSA competition. This year&amp;rsquo;s goal is to be able to pick up little toy dinosaurs or caged dinosaurs. The more you can pick up and transport, the more points you get. The drone flying and picking up the payloads is worth 60 out of the 180 total points. Once again, documentation is two-thirds of your score. This page is still a work in progress as this year&amp;rsquo;s drone is still in progress, but so far it&amp;rsquo;s already better than last year&amp;rsquo;s. I recommend at least skimming over the &lt;a href=&#34;//localhost:1313/projects/dronev1/&#34;&gt;page&lt;/a&gt; for last year&amp;rsquo;s drone to get a better understanding of this year&amp;rsquo;s.&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
